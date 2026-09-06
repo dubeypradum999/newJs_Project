@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+#search-form {
+    background: #222;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#search-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+#search-input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background: #4da6ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1688e8;
+}
+
+#current-image-container {
+    background: black;
+    padding: 25px;
+    border-radius: 10px;
+    min-height: 250px;
+    margin-bottom: 30px;
+}
+
+#current-image-container h2 {
+    margin-bottom: 15px;
+}
+
+#current-image-container h3 {
+    margin: 15px 0;
+    font-size: 25px;
+}
+
+#current-image-container p {
+    line-height: 1.7;
+    color: #ddd;
+}
+
+#current-image-container img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.history-section {
+    background: #222;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.history-section h2 {
+    margin-bottom: 15px;
+}
+
+#search-history {
+    list-style: none;
+}
+
+#search-history li {
+    background: #333;
+    margin-bottom: 8px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#search-history li:hover {
+    background: #4da6ff;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .search-box {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
